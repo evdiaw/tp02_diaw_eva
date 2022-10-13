@@ -12,9 +12,9 @@ export class Comp2Component implements OnInit {
   @Input() nom : String = ""; 
   @Input() civilite : String = ""; 
   @Input() adresse : String = ""; 
-  @Input() code_postal : Number = 0; 
+  @Input() code_postal : String = ""; 
   @Input() ville : String = ""; 
-  @Input() telephone : Number = 0; 
+  @Input() telephone : String = ""; 
   @Input() email : String = ""; 
   @Input() login : String = ""; 
   @Output() change: EventEmitter<String> = new EventEmitter<String>();

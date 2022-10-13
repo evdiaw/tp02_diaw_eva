@@ -9,10 +9,10 @@
         </select>
         
         <label for="prenom">Prenom : </label>
-        <input [(ngModel)]="prenom"/>
+        <input appOnlyLetters [(ngModel)]="prenom"/>
     
         <label for="nom">Nom : </label>
-        <input [(ngModel)]="nom"/>
+        <input appOnlyLetters [(ngModel)]="nom"/>
     </div>
 
     <div>     
@@ -20,15 +20,15 @@
         <input [(ngModel)]="adresse"/>
 
         <label for="code_postal">Code postal : </label>
-        <input [(ngModel)]="code_postal"/>
+        <input appOnlyNumbers maxSize ="4" [(ngModel)]="code_postal"/>
     
         <label for="ville">Ville : </label>
-        <input [(ngModel)]="ville"/>
+        <input appOnlyLetters [(ngModel)]="ville"/>
     </div>
 
     <div>     
         <label for="telephone">telephone : </label>
-        <input [(ngModel)]="telephone"/>
+        <input appOnlyNumbers maxSize ="9" [(ngModel)]="telephone"/>
 
         <label for="email">Email : </label>
         <input [(ngModel)]="email"/>

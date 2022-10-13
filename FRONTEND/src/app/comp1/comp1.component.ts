@@ -13,9 +13,9 @@ export class Comp1Component implements OnInit {
   nom: String = "";
   civilite: String = "";
   adresse: String = ""
-  code_postal: Number = 0;
+  code_postal: String = "";
   ville: String = "";
-  telephone: Number = 0;
+  telephone: String = "";
   email: String = ""
   login: String = "";
   password: String = "";
